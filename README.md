@@ -53,7 +53,11 @@ There are a few things we have to do before we can deply
 - First we have to make sure that we have [GoogleSDK](https://cloud.google.com/sdk/docs/quickstart) installed 
 - We then have initiate the gcloud by using the following command
 ```
-gcloud initiate
+gcloud init
+```
+You can see all your projects in your google cloud by the following command
+```
+gcloud projects list
 ```
 We then have to set our project ID with the following command
 ```
