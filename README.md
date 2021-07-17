@@ -47,3 +47,19 @@ In order to run the function we will type the following command, but first we ha
 functions-framework --target hello_world
 ```
 `hello_world` is the name of the function in `main.py`
+
+## Deploying our function
+There are a few things we have to do before we can deply
+- First we have to make sure that we have [GoogleSDK](https://cloud.google.com/sdk/docs/quickstart) installed 
+- We then have initiate the gcloud by using the following command
+```
+gcloud initiate
+```
+We then have to set our project ID with the following command
+```
+gcloud config set project [YOUR_PROJECT_ID]
+```
+We deploy our function with this command
+```
+gcloud functions deploy [FUNCTION NAME] --runtime python37 --trigger-http
+```
